@@ -1,0 +1,15 @@
+{
+    "name": "eccomerce-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "ecommerce.js",
+    "scripts": {
+        "dev": "nodemon ecommerce.js"
+    },
+    "author": "Elyan",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nodemon": "^2.0.7"
+    }
+}
