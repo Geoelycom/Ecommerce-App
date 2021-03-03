@@ -27,6 +27,8 @@ class UsersRepository {
         attr.id = this.randomId();
         const records = await this.getAll();
         records.push(attr);
+        await this.writeAll(records);
+        return attr;
     }
     async writeAll(records) {
         await fs.promises.writeFile(
