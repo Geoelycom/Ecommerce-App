@@ -36,6 +36,7 @@ class UsersRepository {
             ...attr,
             password: `${buffer.toString('hex')}.${salt}`
         };
+        records.push(record)
         await this.writeAll(records);
         return record;
     }
