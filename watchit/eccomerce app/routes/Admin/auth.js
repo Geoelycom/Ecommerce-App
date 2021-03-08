@@ -12,7 +12,13 @@ router.get('/signup', (req, res) => {
 });
 
 router.post('/signup', [
-        check('email').trim().normalizeEmail().isEmail(),
+        check('email').trim().normalizeEmail().isEmail().withMessage('must be a Valid email').custom(async email => {
+            const existingUser = await usersRepo.getOneBy({ email });
+            if (existingUser) {
+                throw new Error('email already in use')
+            }
+
+        }),
         check('password').trim().isLength({ min: 4, max: 20 }).isStrongPassword({ min: 8, minNumbers: 1, minUppercase: 1 }),
         check('passwordConfirmation').trim().isLength({ min: 4, max: 20 }).isStrongPassword({ min: 8, minNumbers: 1, minUppercase: 1 })
 
@@ -23,10 +29,7 @@ router.post('/signup', [
 
 
         const { email, password, passwordConfirmation } = req.body;
-        const existingUser = await usersRepo.getOneBy({ email });
-        if (existingUser) {
-            return res.send('Email in use');
-        }
+
         if (password !== passwordConfirmation) {
             return res.send('passwords must match')
         }
