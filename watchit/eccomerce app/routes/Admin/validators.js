@@ -19,13 +19,11 @@ module.exports = {
     requirePassword: check('password')
         .trim()
         .isLength({ min: 4, max: 20 })
-        .withMessage('Must be between 4 and 20 characters')
-        .isStrongPassword({ min: 8, minNumbers: 1, minUppercase: 1 }),
+        .withMessage('Must be between 4 and 20 characters'),
 
     requirePasswordConfirmation: check('passwordConfirmation')
         .trim()
         .isLength({ min: 4, max: 20 })
-        .isStrongPassword({ min: 8, minNumbers: 1, minUppercase: 1 })
         .custom((passwordConfirmation, { req }) => {
             if (passwordConfirmation !== req.body.password) {
                 throw new Error('passwords must match ')
