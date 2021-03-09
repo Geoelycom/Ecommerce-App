@@ -18,5 +18,26 @@
     "email": "testabu1@mail.com",
     "password": "7f4fc432da151eda41cd2890e60282733651ba925773a3c032d8935c961bd8bb851a64652e977eb4b2a335f058c88eb4dae81e110bb54554d02dbb840bc8752f.36253c3f33a8ecf9",
     "id": "f94ddc4e"
+  },
+  {
+    "email": "testabu1@mail.com",
+    "password": "c58051306fe04e4e49dc31d2d2b37a4ca4f90a2f99acab1dab7aa0b274085f0017462cc5e5ca68e56273b0a9b4bed09f86a2373d0e372790476352d16187da4c.fe420d6a970358ea",
+    "id": "ad5d5321"
+  },
+  {
+    "email": "john@mail.com",
+    "password": "70d7af2f57abd3597be784eae45a03c5db8e177983f79277e056a0fa32253fe75b9c4af099d06dd683dfc5b6411dc7e6daba9821c881c6ebc2c6b66131f71388.74716ad4863c11da",
+    "id": "b7d319dc"
+  },
+  {
+    "email": "john2@mail.com",
+    "password": "42499c577d5530d384327d8127ed0052d0e8c159d64d4fca70074d43ebf8ee1969e300ab032aab53aafce52c2e8025da801130546934ad45a08ab9c1a9cc11f1.aafc38a97bacc27d",
+    "passwordConfirmation": "thfsfgrg",
+    "id": "b29d67c6"
+  },
+  {
+    "email": "john6@mail.com",
+    "password": "e242026dca5c4cdaf296fa3074f5708643d39e9e64073827498d7da545e95e436fa7e37a292d3de8f8eab749e9b8ef68e5a5865861fc4af3aa99a69adfdea5ac.4ae334cce28c64ef",
+    "id": "db0e8e29"
   }
 ]
