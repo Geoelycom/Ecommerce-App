@@ -43,14 +43,16 @@ router.get('/signout', (req, res) => {
 });
 
 router.get('/signin', (req, res) => {
-    res.send(signInTemplate());
+    res.send(signInTemplate({}));
 });
 
 router.post('/signin', [requiredEmailExists, requiredValidPasswordForUser],
     async(req, res) => {
         const errors = validationResult(req);
-        console.log(errors)
 
+        if (!errors.isEmpty()) {
+            return res.send(signInTemplate({ errors }))
+        }
 
         const { email } = req.body;
 
