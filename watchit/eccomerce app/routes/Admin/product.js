@@ -1,6 +1,5 @@
 const express = require('express');
-const { requirePasswordConfirmation } = require('./validators');
-
+const produtsRepo = require('../../repository/products');
 
 const router = express.Router();
 
