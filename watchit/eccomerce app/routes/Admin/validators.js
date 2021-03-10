@@ -3,6 +3,15 @@ const usersRepo = require('../../repository/users');
 
 module.exports = {
 
+    requireTitle: check('title')
+        .trim()
+        .isLength({ min: 4, max: 30 }),
+
+    requirePrice: check('price')
+        .trim()
+        .toFloat()
+        .isFloat({ min: 1 }),
+
     requireEmail: check('email')
         .trim()
         .normalizeEmail()
