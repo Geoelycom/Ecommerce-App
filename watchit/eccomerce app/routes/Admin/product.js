@@ -21,10 +21,12 @@ router.get('/admin/product/new', (req, res) => {
 
 });
 
-router.post('/admin/product/new', [requireTitle, requirePrice], upload.single('image'), async(req, res) => {
+router.post('/admin/product/new', upload.single('image'), [requireTitle, requirePrice], async(req, res) => {
 
     const errors = validationResult(req);
-
+    if (!errors.isEmpty()) {
+        return res.send(productsNewTemplate({ errors }));
+    }
     const image = req.file.buffer.toString('base64');
     const { title, price } = req.body;
     await produtsRepo.create({ title, price, image });
