@@ -16,7 +16,8 @@ router.get('/signup', (req, res) => {
 router.post('/signup', [
         requireEmail,
         requirePassword,
-        requirePasswordConfirmation,
+        requirePasswordConfirmation
+
 
     ],
     handleErrors(signUpTemplate),
@@ -28,8 +29,7 @@ router.post('/signup', [
 
         req.session.userId = user.id;
 
-        res.send('account created!!!!')
-
+        res.redirect('/admin/product')
     });
 
 router.get('/signout', (req, res) => {
@@ -48,7 +48,7 @@ router.post('/signin', [requiredEmailExists, requiredValidPasswordForUser],
         const user = await usersRepo.getOneBy({ email });
         req.session.userId = user.id;
 
-        res.send('You are signed in!!!')
+        res.redirect('/admin/product');
     }
 
 );
