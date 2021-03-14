@@ -17,8 +17,6 @@ router.post('/signup', [
         requireEmail,
         requirePassword,
         requirePasswordConfirmation
-
-
     ],
     handleErrors(signUpTemplate),
 
