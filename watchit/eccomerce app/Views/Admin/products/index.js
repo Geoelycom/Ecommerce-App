@@ -8,14 +8,14 @@ module.exports = ({ products }) => {
         <td>${product.title}</td>
         <td>${product.price}</td>
         <td>
-          <a href="admin/products/${product.id}/edit">
+          <a href="">
             <button class="button is-link">
               Edit
             </button>
           </a>
         </td>
         <td>
-          <button class="button is-danger">Delete</button>
+          <button class="button is-danger" href="">Delete</button>
         </td>
       </tr>
     `;
