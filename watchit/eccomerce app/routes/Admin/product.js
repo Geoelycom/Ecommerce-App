@@ -65,5 +65,9 @@ router.post('/admin/products/:id/edit', requireAuth, upload.single('image'), [re
 
 
     })
+router.post('/admin/products/:id/delete', requireAuth, async(req, res) => {
+    await productsRepo.delete(req.params.id);
+    res.redirect('/admin/products');
+})
 
 module.exports = router;
