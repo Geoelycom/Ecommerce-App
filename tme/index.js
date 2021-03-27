@@ -2,9 +2,10 @@
 
 
 const Runner = require('./runner');
-const runnner = new Runner();
+const runner = new Runner();
+
 const run = async() => {
-    const results = await Runner.collectFiles();
+    const results = await runner.collectFiles(process.cwd());
     console.log(results);
 }
 
