@@ -35,9 +35,9 @@ To get a local copy up and running follow these simple example steps.
 - Admin
 - Carts
 - Products
-(1). Views -> Admin This folder contains the Auth which houses the signup and signin pages
-(2). Views -> Products. This folder contains the edit.js, index.js, new.js, layout.js. All this contains the code that allows the admin to make changes to his product and structure the layout.
-(3). Views -> Carts. this contains the show.js file that contains the content the user has added to the cart.
+1. -  Views -> Admin This folder contains the Auth which houses the signup and signin pages
+2. -  Views -> Products. This folder contains the edit.js, index.js, new.js, layout.js. All this contains the code that allows the admin to make changes to his product and structure the layout.
+3. - Views -> Carts. this contains the show.js file that contains the content the user has added to the cart.
 
 
 ### Prerequisites
