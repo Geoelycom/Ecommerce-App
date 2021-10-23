@@ -81,7 +81,6 @@ Give a ⭐️ if you like this project!
 
 
 - Inspiration
-- colte-stelle and Grinder 2020 web-dev bootcamp
 - myself 😏
 
 ## License
