@@ -17,7 +17,7 @@ A fully Ecommerce website with authentication, An homepage a customer login form
 
 ## Screenshot
 
-![img](./public/images/ecommerce.png)
+![img](./public/images/shop.png)
 
 
 ### Install
