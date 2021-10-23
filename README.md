@@ -15,6 +15,11 @@ A fully Ecommerce website with authentication, An homepage a customer login form
 
 [Live Demo Link]( https://geoelycom.github.io/Ecommerce-App/)
 
+## Screenshot
+
+![img](./public/images/ecommerce.png)
+
+
 ### Install
 
 To get a local copy up and running follow these simple example steps.
